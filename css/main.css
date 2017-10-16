@@ -1,0 +1,183 @@
+/* =======================================================
+CUSTOM WEB FONTS
+======================================================= */
+
+/* =======================================================
+BASIC STYLES
+======================================================= */
+
+
+
+
+html {
+    font-size: 14px;
+    /* This sets the base font size of the entire document, all other fonts sizes in are based on this font-size using the rem value 1.5rem = 14px * 1.5 = 21px */
+}
+
+
+
+body {
+
+    margin: 0; /* set default margin & padding to be 0 */
+    padding: 0;
+    color: #262626;
+    background-color: #f7f7f7;
+
+}
+
+
+/* =======================================================
+GENERAL TYPOGRAPHY
+======================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    color: #1ca9e3;
+}
+
+h1 {
+    font-size: 3rem;
+    /* rem is relative to the base font size of the entire document, set in the html declaration, line 9 */
+}
+
+h2 {
+    font-size: 2.5rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+
+}
+
+/* =======================================================
+LINKS
+======================================================= */
+
+
+/* Hover */
+
+a:active,
+a:hover {
+
+    color: blue;
+
+}
+
+/* ===================
+    ELEMENTS
+   =================== */
+
+header {
+
+    padding: 10px 10px;
+    margin-bottom: 50px;
+    width: 100vw;
+    background-image: url('../images/sky.jpg');
+    background-size: cover;
+    border-bottom: 10px solid blue;
+
+}
+
+nav {
+
+    display: inline-block;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+nav a {
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 6px;
+    padding: 0px 4px;
+}
+
+h1.site-title {
+    display: inline-block;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: #f7f7f7;
+
+}
+
+
+main {
+    margin: 10px auto; /* Centers the content */
+    width: 900px; /* Sets the width of main content area*/
+}
+
+section {
+    float: left;
+    width: 580px;
+    padding: 10px;
+
+}
+
+aside {
+    float: right;
+    width: 280px;
+    margin: 10px;
+    
+}
+
+footer {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 50px 20px 20px 20px;
+    
+
+}
+
+
+header,
+footer {
+
+    clear: both;
+}
+
+.sub-nav {
+  list-style: none; /*gets rid of bullets*/
+padding-left: 0;    /*gets rid of default padding on lists*/
+font-size: 1.25rem;
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/* resizes images to the size of its parent container */
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Centers any block elements. Useful for centering images*/
+.center-block {
+    display: block;
+    margin: 0 auto;
+}
